@@ -1,3 +1,3 @@
 ﻿using reinforcement.Contents;
 
-Basics.HelloWorld();
+Basics.Usage();

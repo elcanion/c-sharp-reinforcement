@@ -47,9 +47,27 @@ namespace reinforcement.Contents
         // Here we declared a public static method, meaning that
         // the values inside the method belongs to the type (in this
         // case, the class) and not to a particular object instance.
-        public static void HelloWorld()
+        public static void HelloWorldStatic()
         {
-            Console.Write("Hello, World!");
+            Console.WriteLine("Hello, World!");
+        }
+
+        // Here we declared a non-static method that does exactly
+        // the same thing as the static method above. The difference
+        // is: here, any values inside the method will belong to an
+        // instantiated object, and not to the class itself. 
+        public void HelloWorldNotStatic()
+        {
+            Console.WriteLine("Hello, World!");
+        }
+
+        public static void Usage()
+        {
+            
+            Basics basics = new Basics();
+
+            HelloWorldStatic();
+            basics.HelloWorldNotStatic();
         }
     }
 }
