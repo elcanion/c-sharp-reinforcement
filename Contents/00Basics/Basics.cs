@@ -40,6 +40,13 @@ namespace reinforcement.Contents
     // - private protected: members can only be accessed by classes derived from the base class AND in the same assembly;
     public class Basics
     {
+        // Methods represents behaviours we can define to
+        // classes. In this case, we defined the behaviour
+        // HelloWorld that prints "Hello, World!" in the console.
+
+        // Here we declared a public static method, meaning that
+        // the values inside the method belongs to the type (in this
+        // case, the class) and not to a particular object instance.
         public static void HelloWorld()
         {
             Console.Write("Hello, World!");
