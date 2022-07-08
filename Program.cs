@@ -1,5 +1,6 @@
 ﻿using reinforcement.Contents;
-using TypeClass = reinforcement.Contents.Type;
+using TypeClass = reinforcement.Contents;
 
 Basics.Usage();
-TypeClass.Usage();
+TypeStudy.Usage();
+NullableStudy.Usage();

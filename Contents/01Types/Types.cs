@@ -12,7 +12,7 @@ namespace reinforcement.Contents
     // include simple types (such as int, float, bool, char), enum types,
     // struct types and Nullable value types. Reference types include class
     // types, interface types, delegate types and array types.
-    public class Type
+    public class TypeStudy
     {
         public static void TypesDemonstrationUsingMinAndMaxValues()
         {
