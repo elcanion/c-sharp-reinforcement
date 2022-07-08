@@ -5,6 +5,26 @@ using System.Threading.Tasks;
 
 namespace reinforcement.Contents
 {
+
+    // A type is said to be nullable if it can be assigned a value or can
+    // be assigned null, which means the type has no value whatsoever. By
+    // default, all reference types, such as String, are nullable, but all
+    // value types, such as Int32, are not. In C#, you mark a value type as
+    // nullable by using the ? notation after the value type. For example,
+    // int? in C# declares an integer value type that can be assigned null.
+    // The Nullable<T> structure supports using only a value type as a nullable
+    // type because reference types are nullable by design.
+    // The nullable class provides complementary support for the Nullable<T>
+    // structure. The Nullable class supports obtaining the underlying type of
+    // a nullable type, and comparison and equality operations on pairs of
+    // nullable types whose underlying value type does not support generic
+    // comparison and equality operations.
+
+    // The two fundamental members of the Nullable<T> structure are the HasValue
+    // and Value properties. If the HasValue property for a Nullable<T> object
+    // is true, the value of the object can be accessed with the Value property.
+    // If the HasValue property is false, the value of the object is undefined
+    // and an attempt to access the Value property throws an InvalidOperationException.
     public class NullableStudy
     {
         // A nullable value type T? represents all values of its underlying
@@ -115,6 +135,9 @@ namespace reinforcement.Contents
             // If you want to use the default value of the underlying value
             // type in place of null, use the Nullable<T>.GetValueOrDefault()
             // method.
+            float? e = 12.34f;
+            float? f = -1.0f;
+            f = e.GetValueOrDefault(); // Method available only for Nullables
         }
 
         // You can also explicitly cast a nullable value type to a

@@ -12,6 +12,9 @@ namespace reinforcement.Contents
     // include simple types (such as int, float, bool, char), enum types,
     // struct types and Nullable value types. Reference types include class
     // types, interface types, delegate types and array types.
+    // IMPORTANT NOTE: value types are self-contained, meaning that the
+    // variable contains the actual value, and reference types refer
+    // to another value.
     public class TypeStudy
     {
         public static void TypesDemonstrationUsingMinAndMaxValues()
