@@ -37,14 +37,21 @@ namespace reinforcement.Contents
             // in the WriteLine output, and the MaxValue for chars is u+ffff,
             // which represents Undefined and outputs nothing too.
             Console.WriteLine($"char: {(int)char.MinValue:x4} to {(int)char.MaxValue:x4}");
-            
+        }
+
+        public static void NonNumericTypesDemonstration()
+        {
             Console.WriteLine($"DateTime: {DateTime.MinValue} to {DateTime.MaxValue}");
-            
-            Console.WriteLine($"bool: logical true or false");
+            Console.WriteLine($"bool: Can only be logical true or false");
             Console.WriteLine($"object: Base type of all other objects");
             Console.WriteLine($"dynamic: This seems like javascript, bypassing static type checking");
             Console.WriteLine($"string: A sequence of Unicode characters");
-            
+        }
+
+        public static void Usage()
+        {
+            TypesDemonstrationUsingMinAndMaxValues();
+            NonNumericTypesDemonstration();
         }
     }
 }
