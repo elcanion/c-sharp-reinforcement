@@ -55,6 +55,9 @@ namespace reinforcement.Contents
             Console.WriteLine($"StringBuilder: It's used to change strings, as they are immutable.");
             Console.WriteLine($"anonymous type: It's a type without any name that can contain public readonly properties only.");
             Console.WriteLine($"nullable: it allows you to assign null to value type variables.");
+            Type test = typeof(int);
+            Type answer = Nullable.GetUnderlyingType(test);
+            Console.WriteLine($"{answer}");
         }
 
         public static void Usage()

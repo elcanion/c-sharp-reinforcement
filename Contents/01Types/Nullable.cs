@@ -18,8 +18,12 @@ namespace reinforcement.Contents
     // structure. The Nullable class supports obtaining the underlying type of
     // a nullable type, and comparison and equality operations on pairs of
     // nullable types whose underlying value type does not support generic
-    // comparison and equality operations.
-
+    // comparison and equality operations. The value type constraint specifies 
+    // that a type argument used for the type parameter must be a non-nullable value
+    // type. All non-nullable struct types, enum types, and type parameters
+    // having the value type constraint satisfy this constraint. Note that
+    // although classified as a value type, a nullable type does not satisfy
+    // the value type constraint.
     // The two fundamental members of the Nullable<T> structure are the HasValue
     // and Value properties. If the HasValue property for a Nullable<T> object
     // is true, the value of the object can be accessed with the Value property.
