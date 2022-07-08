@@ -12,7 +12,7 @@ namespace reinforcement.Contents
     // include simple types (such as int, float, bool, char), enum types,
     // struct types and Nullable value types. Reference types include class
     // types, interface types, delegate types and array types.
-    public class Types
+    public class Type
     {
         public static void TypesDemonstrationUsingMinAndMaxValues()
         {
@@ -46,6 +46,12 @@ namespace reinforcement.Contents
             Console.WriteLine($"object: Base type of all other objects");
             Console.WriteLine($"dynamic: This seems like javascript, bypassing static type checking");
             Console.WriteLine($"string: A sequence of Unicode characters");
+            Console.WriteLine($"var: strongly typed variable but the compiler determines the type");
+            Console.WriteLine($"struct: data type that represents data structures.");
+            Console.WriteLine($"enum: is used to assign constant names to a group of numeric integer values.");
+            Console.WriteLine($"StringBuilder: It's used to change strings, as they are immutable.");
+            Console.WriteLine($"anonymous type: It's a type without any name that can contain public readonly properties only.");
+            Console.WriteLine($"nullable: it allows you to assign null to value type variables.");
         }
 
         public static void Usage()
